@@ -1,10 +1,11 @@
 body{
     margin: 0;
-    background-image: linear-gradient(black,gray);
+    background-color: rgb(4, 2, 119);
+    font-family: 'Bebas Neue', sans-serif;
 }
 .förstasida {
     min-height: 100vh; 
-    background-image: linear-gradient(black, gray);
+    background-image: linear-gradient(black, rgb(4, 2, 119));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +22,6 @@ h1{
     top: 40%;
     transform: translate(-50%, -40%);
 }
-h2{
-    font-size: 25;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 .videocss{
     width: 80%;
     height: 70vh;
@@ -33,9 +29,7 @@ h2{
     overflow: hidden;
     display: block;
     margin: 0 auto;
-    -webkit-box-shadow:0px 0px 40px 1px rgba(255,255,255,0.8);
-    -moz-box-shadow: 0px 0px 40px 1px rgba(255,255,255,0.8);
-    box-shadow: 0px 0px 40px 1px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 40px 1px rgba(0,123,255,0.8);
 }
 .videocss video {
     width: 100%;
@@ -43,7 +37,6 @@ h2{
     object-fit: cover;
     display: block;
 }
-
 .topbar {
     top: 0;
     position: sticky;
@@ -53,7 +46,6 @@ h2{
     height: 8.5vh;
     z-index: 10;
 }
-
 .topbar a {
     color: rgb(255, 255, 255);
     margin: 0 auto;
@@ -70,34 +62,32 @@ h2{
     height: 2px;
     bottom: 5px;
     left: 50%;
-    background-color: #FF0000;
+    background-color: #3836FD;
     transition: width 0.3s ease, left 0.3s ease;
 }
-
 .topbar a:hover {
-    color: #FF0000;
-    text-shadow: 0 0 8px #FF0000, 0 0 15px #FF0000;
+    color: #3836FD;
+    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
 }
-
 .topbar a:hover::after {
     width: 100%;
     left: 0;
 }
 .topbar .fa-cart-shopping {
     position: absolute;
-    left: 85%;
-    top: 15%;
+    left: 97.5%;
+    top: 5%;
+    gap: 100px;
     margin-top: 0.5vh;
     color: white; 
     font-size: 16px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out, color 0.3s ease, text-shadow 0.3s ease;
 }
-
 .fa-cart-shopping:hover {
     transform: scale(1.1);
-    color: #00b4d8;
-    text-shadow: 0 0 8px #00b4d8, 0 0 15px #00b4d8;
+    color: #3836FD;
+    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
 }
 .button {
     position: absolute;
@@ -109,7 +99,6 @@ h2{
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    left: 40%;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -117,7 +106,6 @@ h2{
     color: #1E90FF;
     font-size: 18px;
 }
-
 #knapp1{
     left: 42.5%;
 }
@@ -132,33 +120,18 @@ h2{
     position: absolute;
     text-align: center;
 }
-#bakgrund{
-    width: 100%;
-    margin-top: -10px;
-}
-
 .andrasida {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 115px;
     padding: 20px;
     align-items: flex-end;
+    margin-top: -100px;
 }
-
-.andrasida img {
-    width: 100%; 
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; 
-}
-
 .andrasida div {
-    background-color: white;
+    background-color: #121212;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -168,17 +141,58 @@ h2{
     align-items: center;
     margin-top: 200px;
 }
-.nivå1{
-    width: 150px;
-    height: 300px;
+.nivå1 {
+    width: 270px;
+    height: 420px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.nivå2{
-    width: 150px;
-    height: 400px;
+.nivå1:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 20px rgba(56, 54, 253, 0.8);
 }
-.nivå3{
-    width: 150px;
-    height: 450px;
+.program-bild {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 0 0;
 }
-
+.nivå1 h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #FFD700; 
+}
+.nivå1 p {
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+}
+.slogan {
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    font-size: 28px;
+}
+.scroll-down {
+    margin-top: 15px;
+    font-size: 35px;
+    color: #FFD700;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
 
