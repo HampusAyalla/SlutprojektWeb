@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: rgb(4, 2, 119);
+    font-family: 'Bebas Neue', sans-serif;
+}
+.förstasida {
+    min-height: 100vh; 
+    background-image: linear-gradient(black, rgb(4, 2, 119));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.topbar {
+    top: 0;
+    position: sticky;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    overflow: hidden;
+    text-align: center;
+    height: 8.5vh;
+    z-index: 10;
+}
+.topbar a {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    font-style: normal;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.topbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #3836FD;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.topbar a:hover {
+    color: #3836FD;
+    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
+}
+.topbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.topbar .fa-cart-shopping {
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    color: white; 
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.3s ease, text-shadow 0.3s ease;
+}
+.fa-cart-shopping:hover {
+    transform: scale(1.1);
+    color: #3836FD;
+    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
+}

@@ -1,11 +1,4 @@
-body{
-    margin: 0;
-    background-color: rgb(4, 2, 119);
-    font-family: 'Bebas Neue', sans-serif;
-}
 .förstasida {
-    min-height: 100vh; 
-    background-image: linear-gradient(black, rgb(4, 2, 119));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +15,14 @@ h1{
     top: 40%;
     transform: translate(-50%, -40%);
 }
+h2{
+    font-size: 30px;
+    top: 52.5%;
+    transform: translate(-50%, -40%);
+}
+h4{
+    font-size: 40px;
+}
 .videocss{
     width: 80%;
     height: 70vh;
@@ -37,61 +38,9 @@ h1{
     object-fit: cover;
     display: block;
 }
-.topbar {
-    top: 0;
-    position: sticky;
-    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-    overflow: hidden;
-    text-align: center;
-    height: 8.5vh;
-    z-index: 10;
-}
-.topbar a {
-    color: rgb(255, 255, 255);
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 22px;
-    text-decoration: none;
-    font-style: normal;
-    transition: color 0.3s ease;
-}
-.topbar a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 5px;
-    left: 50%;
-    background-color: #3836FD;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-.topbar a:hover {
-    color: #3836FD;
-    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
-}
-.topbar a:hover::after {
-    width: 100%;
-    left: 0;
-}
-.topbar .fa-cart-shopping {
-    position: absolute;
-    left: 97.5%;
-    top: 5%;
-    gap: 100px;
-    margin-top: 0.5vh;
-    color: white; 
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, color 0.3s ease, text-shadow 0.3s ease;
-}
-.fa-cart-shopping:hover {
-    transform: scale(1.1);
-    color: #3836FD;
-    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
-}
 .button {
     position: absolute;
-    top: 65%;
+    top: 67.5%;
     transform: translate(-50%, -50%);
     background-color: #FFD700;
     text-decoration: none;
@@ -104,7 +53,7 @@ h1{
 }
 .button:hover {
     color: #1E90FF;
-    font-size: 18px;
+    box-shadow: 0px 0px 40px 1px rgba(0,123,255,0.8);
 }
 #knapp1{
     left: 42.5%;
@@ -139,14 +88,14 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 175px;
 }
 .nivå1 {
     width: 270px;
     height: 420px;
-    background-color: #000000;
+    background: linear-gradient(145deg, #0a0a23, #0d0d40);
     border-radius: 10px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 15px rgba(56, 54, 253, 0.3);
     position: relative;
     z-index: 1;
     display: flex;
@@ -195,4 +144,20 @@ h1{
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
 }
-
+.program-knapp {
+    margin-top: 15px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.program-knapp:hover {
+    background-color: #3836FD;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 5px rgba(56, 54, 253, 0.8);
+}
