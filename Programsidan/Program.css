@@ -1,4 +1,4 @@
-.program-grid {
+.program {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -8,7 +8,6 @@
     margin: auto;
     box-sizing: border-box;
 }
-
 .program-card {
     background: linear-gradient(145deg, #0a0a23, #0d0d40);
     color: white;
@@ -19,25 +18,44 @@
     box-shadow: 2px 2px 15px rgba(56, 54, 253, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .program-card img {
     width: 100%;
+    max-height: 325px;
+    object-fit: cover;
+    object-position: top;
     height: auto;
     display: block;
 }
-
 .program-card h3 {
     font-size: 24px;
     margin: 15px 0 5px 0;
     color: #FFD700;
 }
-
 .program-card p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-
 .program-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #3836FD, 0 0 35px #3836FD;
+}
+.hero {
+    text-align: center;
+    color: white;
+    padding: 50px 20px 0 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -50px;
+}
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.3);
+}
+.hero p {
+    font-size: 24px;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
 }

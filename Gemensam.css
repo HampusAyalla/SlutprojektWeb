@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex-direction: column;
 }
 .topbar {
     top: 0;
@@ -47,18 +48,4 @@ body {
 .topbar a:hover::after {
     width: 100%;
     left: 0;
-}
-.topbar .fa-cart-shopping {
-    position: absolute;
-    right: 20px;
-    top: 20%;
-    color: white; 
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, color 0.3s ease, text-shadow 0.3s ease;
-}
-.fa-cart-shopping:hover {
-    transform: scale(1.1);
-    color: #3836FD;
-    text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
 }
