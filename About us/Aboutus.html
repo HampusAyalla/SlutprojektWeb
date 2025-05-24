@@ -10,18 +10,27 @@
     <script src="https://kit.fontawesome.com/17887cda8a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="topbar">
-        <a href="../About us/Aboutus.html">ABOUT US</a>
-        <a href="../Slutprojekt.html">HOME</a>
-        <a href="../Programsidan/Program.html">PROGRAMS</a>
-    </div>
 
-    <section class="förstasida">
-        <div class="logo-container">
-            <img src="../Bilder/Logo.png" alt="Legendary Lifts Logo">
-        </div>        
-        <div class="aboutUs">
+<body>
+
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <header>
+        <nav class="topbar">
+            <a href="../About us/Aboutus.html">ABOUT US</a>
+            <a href="../Slutprojekt.html">HOME</a>
+            <a href="../Programsidan/Program.html">PROGRAMS</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="förstasida">
+            <div class="logo-container">
+                <img src="../Bilder/Logo.png" alt="Legendary Lifts Logo">
+            </div>        
+        </section>
+
+        <section class="aboutUs">
             <h1>VILKA VI ÄR</h1>
             <p>
                 Legendary Lifts är mer än bara träning - det är en livsstil inspirerad av de mest ikoniska hjältarna och skurkarna från fiktionens värld.
@@ -30,8 +39,9 @@
                 Vårt mål är att göra träning både rolig och målinriktad. Oavsett din nivå finns det ett program som passar dig.
             </p>
             <p class="signature">- Team Legendary Lifts</p>
-        </div>
-        <div class="timelineSida">
+        </section>
+
+        <section class="timelineSida">
             <h2>Projektets Resa</h2>
             <div class="timeline">
                 <div class="timeline-item"><strong>Februari 2025:</strong> Idén föddes.</div> <!--Strong visar att texten är viktig och ger den även tjockare utan css-->
@@ -39,8 +49,9 @@
                 <div class="timeline-item"><strong>April 2025:</strong> Arbetet med hemsidan började.</div>
                 <div class="timeline-item"><strong>Maj 2025:</strong> Projektet blev klart!</div>
             </div>
-        </div>
-        <div class="map">
+        </section>
+
+        <section class="map">
             <h2>Hitta oss</h2>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42301.2108789351!2d18.0316!3d59.3293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d61f02661c9%3A0xfec70da7f24f6a4f!2sStockholm!5e0!3m2!1ssv!2sse!4v1715432969213!5m2!1ssv!2sse" 
@@ -50,8 +61,9 @@
                 allowfullscreen="" 
                 loading="lazy">
             </iframe>
-        </div>
-        <div class="kontakta">
+        </section>
+
+        <section class="kontakta">
             <form action=""> <!--action skickar datan till en fil, men det behövs inte för det här projektet. -->
                 <h2>Kontakta oss</h2>
         
@@ -68,7 +80,14 @@
                     <input type="submit" value="Skicka">
                 </div>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Legendary lift. All rights reserved</p>
+    </footer>
+
+    <script src="../Slutprojekt.js"></script>
+
 </body>
 </html>

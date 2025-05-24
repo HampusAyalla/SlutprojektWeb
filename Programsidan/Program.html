@@ -11,93 +11,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topbar">
-        <a href="../About us/Aboutus.html">ABOUT US</a>
-        <a href="../Slutprojekt.html">HOME</a>
-        <a href="program.html">PROGRAMS</a>
-    </div>
-    <section class="förstasida">
-        <div class="hero">
-            <h1>VÄCK DITT INRE LEGEND</h1>
-            <p>Träna som dina favoritkaraktärer - styrka, smidighet, och fokus i världsklass.</p>
+
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <header>
+        <nav class="topbar">
+            <a href="../About us/Aboutus.html">ABOUT US</a>
+            <a href="../Slutprojekt.html">HOME</a>
+            <a href="program.html">PROGRAMS</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="förstasida">
+            <div class="hero">
+                <h1>VÄCK DITT INRE LEGEND</h1>
+                <p>Träna som dina favoritkaraktärer - styrka, smidighet, och fokus i världsklass.</p>
+            </div>
+
+            
+        <div class="filter-buttons"">
+            <button onclick="filterPrograms('all')">Alla</button>
+            <button onclick="filterPrograms('hero')">Hjältar</button>
+            <button onclick="filterPrograms('villain')">Skurkar</button>
+            <button onclick="filterPrograms('other')">Annat</button>
         </div>
-        <div class="program">
-            <a href="../Program/Program_spiderman.html" class="program-card">
-                <img src="../Bilder/Spiderman.png" alt="Spider-man">
-                <h3>Spider-man</h3>
-                <p>Smidighet och kroppskontroll</p>
-            </a>
-            <a href="../Program/program_batman.html" class="program-card">
-                <img src="../Bilder/Batman.png" alt="Batman">
-                <h3>Batman</h3>
-                <p>Explosiv styrka och funktionell kraft</p>
-            </a>
-            <a href="../Program/program_yennefer.html" class="program-card">
-                <img src="../Bilder/Yennefer.webp" alt="Yennefer">
-                <h3>Yennefer</h3>
-                <p>Rörlighet med mental fokus</p>
-            </a>
-            <a href="../Program/program_invincible.html" class="program-card">
-                <img src="../Bilder/Invincible.webp" alt="Invincible" loading="lazy">
-                <h3>Invincible</h3>
-                <p>Superhjältestyrka och uthållighet</p>
-            </a>
-            <a href="../Program/program_kratos.html" class="program-card">
-                <img src="../Bilder/Kratos.png" alt="Kratos" loading="lazy">
-                <h3>Kratos</h3>
-                <p>Råstyrka med vild intensitet</p>
-            </a>
-            <a href="../Program/program_hercules.html" class="program-card">
-                <img src="../Bilder/Hercules.png" alt="Hercules" loading="lazy">
-                <h3>Hercules</h3>
-                <p>Mythisk kraft och uthållighet</p>
-            </a>
-            <a href="../Program/program_captainamerica.html" class="program-card">
-                <img src="../Bilder/CaptainAmerica.png" alt="Captain-America" loading="lazy">
-                <h3>Captain America</h3>
-                <p>Ballans mellan styrka och snabbhet</p>
-            </a>
-            <a href="../Program/program_tylderdurden.html" class="program-card">
-                <img src="../Bilder/TylerDurden.png" alt="Tyler Durden" loading="lazy">
-                <h3>Tyler Durden</h3>
-                <p>Rippad, enkel och effektiv</p>
-            </a>
-            <a href="../Program/program.nightwing.html" class="program-card">
-                <img src="../Bilder/Nightwing.webp" alt="Nightwing" loading="lazy">
-                <h3>Nightwing</h3>
-                <p>Smidig, stark och akrobatisk</p>
-            </a>
-            <a href="../Program/program_superman.html" class="program-card">
-                <img src="../Bilder/Superman.png" alt="Superman" loading="lazy">
-                <h3>Superman</h3>
-                <p>Totalstyrka i varje rörelse</p>
-            </a>
-            <a href="../Program/program.bane.html" class="program-card">
-                <img src="../Bilder/Bane.png" alt="Bane" loading="lazy">
-                <h3>Bane</h3>
-                <p>Muskulös, tung och explosiv</p>
-            </a>
-            <a href="../Program/program_wolverine.html" class="program-card">
-                <img src="../Bilder/Wolverine.png" alt="Lara Croft" loading="lazy">
-                <h3>Wolverine</h3>
-                <p>Snabb återhämtning och råstyrka</p>
-            </a>
-            <a href="../Program/program.thor.html" class="program-card">
-                <img src="../Bilder/Thor.png" alt="Thor" loading="lazy">
-                <h3>Thor</h3>
-                <p>Asgårdsk kraft och tyngd</p>
-            </a>
-            <a href="../Program/program_laracroft.html" class="program-card">
-                <img src="../Bilder/LaraCroft.png" alt="Lara Croft" loading="lazy">
-                <h3>Lara Croft</h3>
-                <p>Smidighet och äventyrsstyrka</p>
-            </a>
-            <a href="../Program/program_terminator.html" class="program-card">
-                <img src="../Bilder/Terminator.webp" alt="Terminator" loading="lazy">
-                <h3>Terminator</h3>
-                <p>Stabil, kraftfull och precis</p>
-            </a>
-        </div>    
-    </section>
+
+            <div class="program">
+                <a href="../Program/Program_spiderman.html" class="program-card" category="hero">
+                    <img src="../Bilder/Spiderman.png" alt="Spider-man">
+                    <h3>Spider-man</h3>
+                    <p>Smidighet och kroppskontroll</p>
+                </a>
+                <a href="../Program/program_batman.html" class="program-card" category="hero">
+                    <img src="../Bilder/Batman.png" alt="Batman">
+                    <h3>Batman</h3>
+                    <p>Explosiv styrka och funktionell kraft</p>
+                </a>
+                <a href="../Program/program_yennefer.html" class="program-card" category="hero">
+                    <img src="../Bilder/Yennefer.webp" alt="Yennefer">
+                    <h3>Yennefer</h3>
+                    <p>Rörlighet med mental fokus</p>
+                </a>
+                <a href="../Program/program_invincible.html" class="program-card" category="hero">
+                    <img src="../Bilder/Invincible.webp" alt="Invincible" loading="lazy">
+                    <h3>Invincible</h3>
+                    <p>Superhjältestyrka och uthållighet</p>
+                </a>
+                <a href="../Program/program_kratos.html" class="program-card" category="other">
+                    <img src="../Bilder/Kratos.png" alt="Kratos" loading="lazy">
+                    <h3>Kratos</h3>
+                    <p>Råstyrka med vild intensitet</p>
+                </a>
+                <a href="../Program/program_hercules.html" class="program-card" category="hero">
+                    <img src="../Bilder/Hercules.png" alt="Hercules" loading="lazy">
+                    <h3>Hercules</h3>
+                    <p>Mythisk kraft och uthållighet</p>
+                </a>
+                <a href="../Program/program_captainamerica.html" class="program-card" category="hero">
+                    <img src="../Bilder/CaptainAmerica.png" alt="Captain-America" loading="lazy">
+                    <h3>Captain America</h3>
+                    <p>Ballans mellan styrka och snabbhet</p>
+                </a>
+                <a href="../Program/program_tylderdurden.html" class="program-card" category="other">
+                    <img src="../Bilder/TylerDurden.png" alt="Tyler Durden" loading="lazy">
+                    <h3>Tyler Durden</h3>
+                    <p>Rippad, enkel och effektiv</p>
+                </a>
+                <a href="../Program/program.nightwing.html" class="program-card" category="hero">
+                    <img src="../Bilder/Nightwing.webp" alt="Nightwing" loading="lazy">
+                    <h3>Nightwing</h3>
+                    <p>Smidig, stark och akrobatisk</p>
+                </a>
+                <a href="../Program/program_superman.html" class="program-card" category="hero">
+                    <img src="../Bilder/Superman.png" alt="Superman" loading="lazy">
+                    <h3>Superman</h3>
+                    <p>Totalstyrka i varje rörelse</p>
+                </a>
+                <a href="../Program/program.bane.html" class="program-card" category="villain">
+                    <img src="../Bilder/Bane.png" alt="Bane" loading="lazy">
+                    <h3>Bane</h3>
+                    <p>Muskulös, tung och explosiv</p>
+                </a>
+                <a href="../Program/program_wolverine.html" class="program-card" category="other">
+                    <img src="../Bilder/Wolverine.png" alt="Lara Croft" loading="lazy">
+                    <h3>Wolverine</h3>
+                    <p>Snabb återhämtning och råstyrka</p>
+                </a>
+                <a href="../Program/program.thor.html" class="program-card" category="other">
+                    <img src="../Bilder/Thor.png" alt="Thor" loading="lazy">
+                    <h3>Thor</h3>
+                    <p>Asgårdsk kraft och tyngd</p>
+                </a>
+                <a href="../Program/program_laracroft.html" class="program-card" category="other">
+                    <img src="../Bilder/LaraCroft.png" alt="Lara Croft" loading="lazy">
+                    <h3>Lara Croft</h3>
+                    <p>Smidighet och äventyrsstyrka</p>
+                </a>
+                <a href="../Program/program_terminator.html" class="program-card" category="villain">
+                    <img src="../Bilder/Terminator.webp" alt="Terminator" loading="lazy">
+                    <h3>Terminator</h3>
+                    <p>Stabil, kraftfull och precis</p>
+                </a>
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Legendary lift. All rights reserved</p>
+    </footer>
+
+    <script src="../Slutprojekt.js"></script>
+
 </body>
 </html>

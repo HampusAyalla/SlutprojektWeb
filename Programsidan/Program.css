@@ -79,4 +79,29 @@
         padding: 0 10px;
     }
 }
-
+.filter-buttons {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.filter-buttons button {
+    background-color: #3836FD;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.filter-buttons button:hover {
+    background-color: #FFD700;
+    color: #0a0a23;
+    transform: scale(1.05);
+}
+.filter-buttons button.active {
+    background-color: #FFD700;
+    color: #0a0a23;
+}

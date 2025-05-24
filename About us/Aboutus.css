@@ -1,4 +1,8 @@
+.aboutUs, .timelineSida, .map, .kontakta { 
+    margin: 0 auto;
+}
 .logo-container {
+    margin-top: -200px;
     width: 100%;
     text-align: center;
     padding: 20px 0 10px 0;
@@ -7,7 +11,7 @@
     max-width: 180px;
 }
 .aboutUs {
-    margin-top: -120px;
+    margin-top: -410px;
     max-width: 800px;
     padding: 40px;
     border-radius: 15px;
@@ -34,6 +38,7 @@
     margin-top: -50px;
     text-align: center;
     color: white;
+    max-width: 280px;
 }
 .timelineSida h2 {
     font-size: 2.5em;
@@ -126,3 +131,13 @@ textarea {
 .submit input:hover {
     background-color: #2d2bd0;
 }
+@media (max-width: 768px) {
+    .aboutUs, .timelineSida, .map, .kontakta {
+      max-width: 85%;
+      padding: 20px 10px;
+    }
+    .map iframe {
+      height: 200px;
+    }
+  }
+  
