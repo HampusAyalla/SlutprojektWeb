@@ -59,3 +59,24 @@
     margin: 0 auto;
     line-height: 1.4;
 }
+@media screen and (max-width: 768px) {
+    .program {
+        grid-template-columns: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+    .program-card h3 {
+        font-size: 20px;
+    }
+    .program-card p {
+        font-size: 14px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+}
+

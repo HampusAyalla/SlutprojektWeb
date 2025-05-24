@@ -1,8 +1,10 @@
+/* Updated CSS with responsive design */
+
+/* Base styles from original code */
 .förstasida {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 .header{
     text-align: center;
@@ -13,7 +15,7 @@
 h1{
     font-size: 50px;
     top: 40%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%); /*Flyttar längs x och y axel*/
 }
 h2{
     font-size: 30px;
@@ -50,16 +52,11 @@ h4{
     border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    left: 50%;
 }
 .button:hover {
     color: #1E90FF;
     box-shadow: 0px 0px 40px 1px rgba(0,123,255,0.8);
-}
-#knapp1{
-    left: 42.5%;
-}
-#knapp2{
-    left: 57.5%;
 }
 #logo{
     height: 30vh;
@@ -134,7 +131,7 @@ h4{
     margin: 30px 0;
     font-size: 28px;
 }
-.scroll-down {
+.mellanSida {
     margin-top: 15px;
     font-size: 35px;
     color: #FFD700;
@@ -160,4 +157,36 @@ h4{
     color: white;
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 5px rgba(56, 54, 253, 0.8);
+}
+@media (max-width: 768px) {
+    .andrasida {
+        gap: 0;
+    }
+    .nivå1 {
+        width: 80%;
+        max-width: 320px;
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 28px;
+        top: 41%;
+    }
+    h2 {
+        font-size: 16px;
+        top: 50%;
+    }
+    .button {
+        top: 63%;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #logo {
+        width: 25%;
+        height: auto;
+        top: 25%;
+        left: 37.5%;
+    }
+    .videocss {
+        height: 50vh;
+    }
 }

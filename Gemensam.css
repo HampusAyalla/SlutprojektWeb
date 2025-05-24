@@ -1,11 +1,13 @@
+/*Det här är en gemensamm css fil för alla html filer för att de alla ska ha samma navigation bar samt bakgrund*/
+
 body {
-    margin: 0;
+    margin: 0; /*Fyller sidorna*/
     background-color: rgb(4, 2, 119);
     font-family: 'Bebas Neue', sans-serif;
 }
 .förstasida {
     min-height: 100vh; 
-    background-image: linear-gradient(black, rgb(4, 2, 119));
+    background-image: linear-gradient(black, rgb(4, 2, 119)); /*Lägger till en gradient, standard gradierar den från högt till lågt*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,38 +16,37 @@ body {
 }
 .topbar {
     top: 0;
-    position: sticky;
+    position: sticky; /*Följer med när man scrollar*/
     background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-    overflow: hidden;
     text-align: center;
     height: 8.5vh;
-    z-index: 10;
+    z-index: 10; /*Vilken nivå den ligger "åt ditt håll", t.ex om något har nivå 2 kommer den ligga över en med z-index 1*/
 }
 .topbar a {
     color: rgb(255, 255, 255);
     margin: 0 auto;
     padding: 20px;
     font-size: 22px;
-    text-decoration: none;
+    text-decoration: none; /*Tar bort länk linjerna*/
     font-style: normal;
     position: relative;
     transition: color 0.3s ease;
 }
 .topbar a::after {
-    content: '';
+    content: ''; /*skapar pseudo element utan innehåll*/
     position: absolute;
     width: 0%;
     height: 2px;
     bottom: 5px;
     left: 50%;
     background-color: #3836FD;
-    transition: width 0.3s ease, left 0.3s ease;
+    transition: width 0.3s ease, left 0.3s ease; /*Linjen som blir skapad under har en transition*/
 }
 .topbar a:hover {
     color: #3836FD;
     text-shadow: 0 0 8px #3836FD, 0 0 15px #3836FD;
 }
-.topbar a:hover::after {
+.topbar a:hover::after { /*::After är ett pseudo element som i detta fall skapar den blåa grafiska linjen*/
     width: 100%;
     left: 0;
 }

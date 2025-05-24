@@ -63,9 +63,66 @@
     text-align: center;
     padding: 40px;
 }
-.map h2 {
+h2 {
     font-size: 2.2em;
     color: #ffd700;
     margin-bottom: 20px;
 }
-
+.kontakta {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.kontakta form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.kontakta h2 {
+    font-size: 2.2em;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label {
+    color: #ffd700;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+textarea {
+    resize: vertical;
+    min-height: 20vh;
+}
+.submit {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5vh;
+}
+.submit input {
+    padding: 10px 30px;
+    background-color: #3836FD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.submit input:hover {
+    background-color: #2d2bd0;
+}
