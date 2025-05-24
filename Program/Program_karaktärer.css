@@ -76,3 +76,23 @@ table th {
         width: 90%;
     }
 }
+.btn-tillbaka {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    top: 7.5px;
+    left: 15px;
+    background-color: #FFD700; 
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.btn-tillbaka:hover {
+    opacity: 0.8;;
+}
