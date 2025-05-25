@@ -5,7 +5,7 @@ body {
     background-color: rgb(4, 2, 119);
     font-family: 'Bebas Neue', sans-serif;
 }
-.förstasida {
+.front-page {
     min-height: 100vh; 
     background-image: linear-gradient(black, rgb(4, 2, 119)); /*Lägger till en gradient, standard gradierar den från högt till lågt*/
     display: flex;

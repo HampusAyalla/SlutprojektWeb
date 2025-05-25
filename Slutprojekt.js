@@ -15,28 +15,31 @@ function filterPrograms(category) {
     document.querySelector(`.filter-buttons button[onclick*="${category}"]`).classList.add('active');
 }
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("kontaktForm").addEventListener("submit", (e) => {
-      const mail = document.getElementById("mail");
-      const ang = document.getElementById("angående");
-      const med = document.getElementById("meddelande");
-  
-      let fel = "";
-  
-      if (!mail.value.includes("@") || !mail.value.includes(".")) {
-        fel += "Felaktig e-postadress.";
-      }
-      if (ang.value.trim() === "") {
-        fel += "Fältet 'Angående' får inte vara tomt.";
-      }
-      if (med.value.trim() === "") {
-        fel += "Fältet 'Meddelande' får inte vara tomt.";
-      }
-  
-      if (fel) {
-        e.preventDefault();
-        alert(fel);
-      }
-    });
-  });
-  
+  document.getElementById("contact-us-form").addEventListener("submit", (e) => {
+    const fullName = document.getElementById("fname");
+    const mail = document.getElementById("mail");
+    const ang = document.getElementById("angående");
+    const med = document.getElementById("meddelande");
 
+    let fel = "";
+
+    if (fullName.value.trim() === "") {
+      fel += "Fältet 'För och efternamn' får inte vara tomt.\n";
+    }
+
+    if (!mail.value.includes("@") || !mail.value.includes(".")) {
+      fel += "Felaktig e-postadress.\n";
+    }
+    if (ang.value.trim() === "") {
+      fel += "Fältet 'Angående' får inte vara tomt.\n";
+    }
+    if (med.value.trim() === "") {
+      fel += "Fältet 'Meddelande' får inte vara tomt.\n";
+    }
+
+    if (fel) {
+      e.preventDefault();
+      alert(fel);
+    }
+  });
+});

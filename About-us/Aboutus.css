@@ -1,16 +1,16 @@
-.aboutUs, .timelineSida, .map, .kontakta { 
+.about-us, .timeline-section, .map, .contact-us { 
     margin: 0 auto;
 }
-.logo-container {
+.logo {
     margin-top: -200px;
     width: 100%;
     text-align: center;
     padding: 20px 0 10px 0;
 }
-.logo-container img {
+.logo img {
     max-width: 180px;
 }
-.aboutUs {
+.about-us {
     margin-top: -410px;
     max-width: 800px;
     padding: 40px;
@@ -18,12 +18,12 @@
     color: white;
     text-align: center;
 }
-.aboutUs h1 {
-    font-size: 3em;
+.about-us h1 {
+    font-size: 3em; /*3 Gånger av nuvarande fonts size alltså den förinställda gånger 3*/ 
     margin-bottom: 20px;
     color: #ffd700;
 }
-.aboutUs p {
+.about-us p {
     font-size: 1.4em;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -34,13 +34,13 @@
     margin-top: 30px;
     color: #b5b5ff;
 }
-.timelineSida {
+.timeline-section {
     margin-top: -50px;
     text-align: center;
     color: white;
     max-width: 280px;
 }
-.timelineSida h2 {
+.timeline-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #ffd700;
@@ -73,20 +73,20 @@ h2 {
     color: #ffd700;
     margin-bottom: 20px;
 }
-.kontakta {
+.contact-us {
     margin-top: -60px;
     display: flex;
     justify-content: center;
     padding: 40px 20px;
 }
-.kontakta form {
+.contact-us form {
     max-width: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.kontakta h2 {
+.contact-us h2 {
     font-size: 2.2em;
     color: #ffd700;
     text-align: center;
@@ -110,7 +110,7 @@ textarea {
     color: #000;
 }
 textarea {
-    resize: vertical;
+    resize: vertical; /*Gör så att om du ändrar storleken på ärende rutan blir den bara längre vertikalt inte horizontellt*/
     min-height: 20vh;
 }
 .submit {
@@ -132,7 +132,7 @@ textarea {
     background-color: #2d2bd0;
 }
 @media (max-width: 768px) {
-    .aboutUs, .timelineSida, .map, .kontakta {
+    .about-us, .timeline-page, .map, .contact-us {
       max-width: 85%;
       padding: 20px 10px;
     }
@@ -146,7 +146,7 @@ textarea {
     margin-bottom: 10px;
 }
 .features-list {
-    list-style: none;
+    list-style: none; /*Tar bort den förinställda styleringen på en lista*/
     padding: 0;
     margin: 30px auto;
     text-align: center;

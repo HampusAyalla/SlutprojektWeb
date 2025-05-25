@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Padding och border räknas i total höjd och längd*/
 }
 .program-card {
     background: linear-gradient(145deg, #0a0a23, #0d0d40);
@@ -57,7 +57,7 @@
     color: #e0e0e0;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.4;
+    line-height: 1.4; /*Mellanrum mellan texter*/
 }
 @media screen and (max-width: 768px) {
     .program {

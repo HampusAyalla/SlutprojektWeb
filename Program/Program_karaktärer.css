@@ -1,7 +1,6 @@
-.karaktar-container {
+.character-container {
     margin: 30px auto;
     padding: 20px;
-    color: white;
 }
 .info-box{
     display: flex;
@@ -12,29 +11,29 @@
     margin-bottom: 40px;
     margin-top: 40px;
 }
-.karaktär-bild {
+.character-picture {
     width: 300px;
     height: 312.5px;
     border-radius: 15px;
     object-fit: cover;
     object-position: top;
 }
-.karaktär-stats {
+.character-stats {
     background-color: rgba(10, 10, 40, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(56, 54, 253, 0.5);
     min-width: 250px;
 }
-.karaktär-stats h2 {
+.character-stats h2 {
     margin-top: 0;
     color: #FFD700;
 }
-.karaktär-stats ul {
+.character-stats ul {
     list-style: none;
     padding: 0;
 }
-.karaktär-stats li {
+.character-stats li {
     padding: 6px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     color: white;
@@ -44,10 +43,6 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(56, 54, 253, 0.5);
-    color: #FFD700;
-}
-.program-wrapper h2 {
-    margin-top: 0;
     color: #FFD700;
 }
 table {
@@ -65,18 +60,18 @@ table th {
     background-color: rgba(56, 54, 253, 0.2);
 }
 @media (max-width: 768px) {
-    .info-wrapper {
+    .info-box {
         flex-direction: column;
         align-items: center;
     }
-    .karaktar-bild {
+    .character-picture {
         width: 70%;
     }
-    .karaktar-stats {
+    .character-stats {
         width: 90%;
     }
 }
-.btn-tillbaka {
+.btn-back {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -93,6 +88,6 @@ table th {
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
-.btn-tillbaka:hover {
-    opacity: 0.8;;
+.btn-back:hover {
+    opacity: 0.8; /*Genomskinlig*/
 }

@@ -24,13 +24,13 @@
     </header>
 
     <main>
-        <section class="förstasida">
-            <div class="logo-container">
+        <section class="front-page">
+            <div class="logo">
                 <img src="../Bilder/Logo.png" alt="Legendary Lifts Logo">
             </div>        
         </section>
 
-        <section class="aboutUs">
+        <section class="about-us">
             <h1>VILKA VI ÄR</h1>
             <p>
                 Legendary Lifts är mer än bara träning - det är en livsstil inspirerad av de mest ikoniska hjältarna och skurkarna från fiktionens värld.
@@ -47,7 +47,7 @@
             <p class="signature">- Team Legendary Lifts</p>
         </section>
 
-        <section class="timelineSida">
+        <section class="timeline-section">
             <h2>Projektets Resa</h2>
             <div class="timeline">
                 <div class="timeline-item"><strong>Februari 2025:</strong> Idén föddes.</div> <!--Strong visar att texten är viktig och gör den även tjockare utan css-->
@@ -69,15 +69,15 @@
             </iframe>
         </section>
 
-        <section class="kontakta">
-            <form id="kontaktForm">
+        <section class="contact-us">
+            <form id="contact-us-form" novalidate>
                 <h2>Kontakta oss</h2>
         
-                <label for="fname">Full name:</label>
+                <label for="fname">För och efternamn:</label>
                 <input type="text" id="fname" name="fname" required>
         
                 <label for="mail">Mail:</label>
-                <input type="text" id="mail" name="mail"> <!--Enligt instruktionerna ska man ha lämplig typ av input fält (alltså type="email"), men för att validera med JS enligt instruktionerna behöves type"text" då type="email" har inbyggd validering.-->
+                <input type="email" id="mail" name="mail"> 
                 <div id="mailError" class="error-message"></div>
         
                 <label for="angående">Angående:</label>
