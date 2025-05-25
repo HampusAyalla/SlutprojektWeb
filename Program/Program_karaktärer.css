@@ -89,5 +89,5 @@ table th {
     transition: background-color 0.3s ease;
 }
 .btn-back:hover {
-    opacity: 0.8; /*Genomskinlig*/
+    opacity: 0.8; /*Genomskinlig*/ 
 }
