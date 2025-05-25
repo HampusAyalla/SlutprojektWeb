@@ -140,4 +140,21 @@ textarea {
       height: 200px;
     }
   }
-  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #fff;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

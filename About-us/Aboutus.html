@@ -17,7 +17,7 @@
 
     <header>
         <nav class="topbar">
-            <a href="../About us/Aboutus.html">ABOUT US</a>
+            <a href="../About-us/Aboutus.html">ABOUT US</a>
             <a href="../Slutprojekt.html">HOME</a>
             <a href="../Programsidan/Program.html">PROGRAMS</a>
         </nav>
@@ -38,13 +38,19 @@
             <p>
                 Vårt mål är att göra träning både rolig och målinriktad. Oavsett din nivå finns det ett program som passar dig.
             </p>
+            <ul class="features-list">
+                <li>💪 18 träningsprogram inspirerade av kända karaktärer</li>
+                <li>⚡ Anpassade rutiner för alla nivåer</li>
+                <li>🆓 Gratis tillgång utan registrering</li>
+                <li>📱 Responsiv design för både mobil och dator</li>
+            </ul>
             <p class="signature">- Team Legendary Lifts</p>
         </section>
 
         <section class="timelineSida">
             <h2>Projektets Resa</h2>
             <div class="timeline">
-                <div class="timeline-item"><strong>Februari 2025:</strong> Idén föddes.</div> <!--Strong visar att texten är viktig och ger den även tjockare utan css-->
+                <div class="timeline-item"><strong>Februari 2025:</strong> Idén föddes.</div> <!--Strong visar att texten är viktig och gör den även tjockare utan css-->
                 <div class="timeline-item"><strong>Mars 2025:</strong> Konceptet blev klart.</div>
                 <div class="timeline-item"><strong>April 2025:</strong> Arbetet med hemsidan började.</div>
                 <div class="timeline-item"><strong>Maj 2025:</strong> Projektet blev klart!</div>
@@ -64,23 +70,30 @@
         </section>
 
         <section class="kontakta">
-            <form action=""> <!--action skickar datan till en fil, men det behövs inte för det här projektet. -->
+            <form id="kontaktForm">
                 <h2>Kontakta oss</h2>
         
                 <label for="fname">Full name:</label>
                 <input type="text" id="fname" name="fname" required>
         
                 <label for="mail">Mail:</label>
-                <input type="email" id="mail" name="mail" required>
+                <input type="text" id="mail" name="mail"> <!--Enligt instruktionerna ska man ha lämplig typ av input fält (alltså type="email"), men för att validera med JS enligt instruktionerna behöves type"text" då type="email" har inbyggd validering.-->
+                <div id="mailError" class="error-message"></div>
         
                 <label for="angående">Angående:</label>
-                <textarea id="angående" name="angående" required></textarea>
+                <input type="text" id="angående" name="angående">
+                <div id="angåendeError" class="error-message"></div>
+        
+                <label for="meddelande">Meddelande:</label>
+                <textarea id="meddelande" name="meddelande"></textarea>
+                <div id="meddelandeError" class="error-message"></div>
         
                 <div class="submit">
                     <input type="submit" value="Skicka">
                 </div>
             </form>
         </section>
+        
     </main>
 
     <footer>
